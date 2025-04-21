@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bulk File Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bulk File Generator</h1>
+
+  <label>Select file types:</label><br/>
+  <input type="checkbox" id="docx" /> .docx
+  <input type="checkbox" id="xlsx" /> .xlsx
+  <input type="checkbox" id="pptx" /> .pptx
+  <input type="checkbox" id="txt" /> .txt
+  <input type="checkbox" id="csv" /> .csv
+  <input type="checkbox" id="json" /> .json
+  <input type="checkbox" id="pdf" /> .pdf
+
+  <br/><br/>
+  <label>Number of files per type:</label>
+  <input type="number" id="fileCount" value="5" min="1"/>
+
+  <br/><br/>
+  <button id="generateBtn">Generate Files</button>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

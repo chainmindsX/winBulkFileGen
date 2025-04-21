@@ -1,0 +1,34 @@
+{
+  "name": "bulk-file-generator",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "package": "electron-packager . bulk-file-generator --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "build": {
+    "appId": "com.bulk.file.generator",
+    "productName": "Bulk File Generator",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "portable"
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "docx": "^8.0.0",
+    "pdfkit": "^0.13.0",
+    "pptxgenjs": "^3.12.0",
+    "xlsx": "^0.18.5"
+  }
+}
